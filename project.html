@@ -44,14 +44,16 @@
             position: relative;
         }
 
-        #logo {
-            position: absolute;
-            top: 0px;
-            
-            left: 0px;
-            width: 132px; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
+        @media only screen and (max-width: 600px) {
+  header {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  #logo {
+    width: 100%; /* Make the logo full-width on smaller screens */
+    max-width: 200px; /* Limit the maximum width of the logo */
+  }
+}
+
         a{
             color:  #27ae60;
         }
