@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="b  width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <title>Limuru Constituency</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #3498db;
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+    /* Custom styles for the modal */
+    #confirmationModal .modal-dialog {
+        max-width: 500px;
+    }
+
+    #confirmationModal .modal-content {
+        border-radius: 10px;
+    }
+
+    #confirmationModal .modal-header {
+        background-color: #3498db;
+        color: #fff;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* Custom styles for the modal */
+    #confirmationModal .modal-dialog {
+        max-width: 500px;
+    }
+
+    #confirmationModal .modal-content {
+        border-radius: 10px;
+    }
+
+    #confirmationModal .modal-header {
+        background-color: #3498db;
+        color: #fff;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px; /* Reduced padding */
+    }
+
+
+    #confirmationModal .modal-body {
+        padding: 20px;
+        .h2{
+            color: #27ae60;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+
+    }
+
+    #confirmationModal .btn-secondary,
+    #confirmationModal .btn-primary {
+        background-color: #2c3e50;
+        color: #fff;
+    }
+    header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            text-size-adjust: 60%;
+            padding: 40px;
+            position: relative;
+            h1 {
+                color: white;
+            }
+            font-size: large;
+        }
+        .ex {
+            input {
+                padding: 730% 730%;
+            }
+            
+            padding: 730% 730%;
+
+
+        }
+
+        #logo {
+            position: absolute;
+            top: 0px;
+            
+            left: 0px;
+            width: 145px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        nav {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        footer{
+            padding: 20px;
+            text-align: center;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+        }
+
+        nav a {
+            color:  #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+</style>
+
+
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://media.istockphoto.com/id/1307737982/vector/coat-of-arms-of-the-republic-of-kenya.jpg?s=612x612&w=0&k=20&c=drDYJ1wGRo7-cNhJFunIXbN7dRjtf21imuQhhAPAR_w=" alt="Logo">
+        <h1><strong>Limuru Constituency Bursary System</strong></h1>
+    </header>
+
+    <nav>
+        <em>
+        <a href="index.html">Home</a>
+        <a href="applicationForm.html">Application Form</a>
+        <a href="project.html">Projects</a>
+        </em>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Bursary Application Form</h1>
+
+        <!-- Bursary Form -->
+        <form id="bursaryForm">
+            <h2>Bio-data</h2>
+            <label for="1st">First Name:</label>
+            <input type="text" id="1st" required>
+
+            
+            <label for="2nd">Middle Name:</label>
+            <input type="text" id="2nd" required>
+
+            
+            <label for="3rd">Last Name:</label>
+            <input type="text" id="3rd" required>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" required>
+
+            <label for="applicantId">Applicant's ID Number (if over 18 years):</label>
+            <input type="text" id="applicantId">
+
+            <label for="registrationNumber">Applicant's Registration Number:</label>
+            <input type="text" id="registrationNumber" required>
+
+            <label for="yearOfStudy">Year of Study:</label>
+            <input type="text" id="yearOfStudy" required>
+
+            <label for="learningInstitution">Learning Institution:</label>
+            <input type="text" id="learningInstitution" required>
+
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" required>
+
+            <label for="amountAppliedFor">Amount of Funds Applied For:</label>
+            <input type="number" id="amountAppliedFor" required>
+
+            <label for="ward">Ward:</label>
+            <input type="text" id="ward" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <label for="subLocation">Sub-location:</label>
+            <input type="text" id="subLocation" required>
+
+            <label for="village">Village:</label>
+            <input type="text" id="village" required>   
+            <div id="ex">
+            <label for="explain">Explain more about your self :</label>
+            <input type="text" id="explain" required>
+            </div>
+
+            
+
+            <!-- Family Status -->
+            <div class="form-group">
+                <label for="familyStatus">Family Status:</label>
+                <select id="familyStatus" class="form-control" onchange="toggleFileUpload()">
+                    <option value="bothParentsAlive">Both Parents Alive</option>
+                    <option value="partialOrTotalOrphan">Orphan</option>
+                    <option value="singleParent">Single Parent</option>
+                </select>
+            </div>
+
+            <!-- File Upload Section -->
+            <div class="form-group" id="fileUploadSection" style="display: none;">
+
+                <label for="documentUpload">Upload Death certificate:(<em>must be in PDF</em>)</label>
+                <input type="file" id="documentUpload" class="form-control">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" class="btn btn-primary" onclick="submitBursaryForm()">Submit Application</button>
+
+            <!-- Processing Message -->
+            <p id="processingMessage" style="display: none;">Processing your application...</p>
+
+        </form>
+    </div>
+
+    <!-- Bootstrap Modal -->
+
+          <!-- Bootstrap Modal -->
+    <!-- Bootstrap Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <h2>Your application has been submitted successfully!</h2>
+                <p>We are currently processing your data.We will send you a confirmation SMS once we are through</p>
+                
+                <a href="index.html" class="btn btn-secondary">Go Home</a>
+            </div>
+
+        </div>
+    </div>
+</div>   
+
+   
+
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Add your JavaScript code here
+        function toggleFileUpload() {
+            const familyStatus = document.getElementById('familyStatus').value;
+            const fileUploadSection = document.getElementById('fileUploadSection');
+
+            if (familyStatus === 'partialOrTotalOrphan' || familyStatus === 'singleParent') {
+                fileUploadSection.style.display = 'block';
+            } else {
+                fileUploadSection.style.display = 'none';
+            }
+        }
+
+        function submitBursaryForm() {
+            // Display processing message
+            document.getElementById('processingMessage').style.display = 'block';
+
+            // Fetch form values
+            const firstName = document.getElementById('1st').value;
+            const middleName = document.getElementById('2nd').value;
+            const lastName = document.getElementById('3rd').value;
+            const familyStatus = document.getElementById('familyStatus').value;
+            const contactNumber = document.getElementById('contactNumber').value;
+            const applicantId = document.getElementById('applicantId').value;
+            const registrationNumber = document.getElementById('registrationNumber').value;
+            const yearOfStudy = document.getElementById('yearOfStudy').value;
+            const learningInstitution = document.getElementById('learningInstitution').value;
+            const dateOfBirth = document.getElementById('dateOfBirth').value;
+            const amountAppliedFor = document.getElementById('amountAppliedFor').value;
+            const ward = document.getElementById('ward').value;
+            const location = document.getElementById('location').value;
+            const subLocation = document.getElementById('subLocation').value;
+            const village = document.getElementById('village').value;
+            // ... (fetch other form values)
+
+            // File upload logic (Note: This is a simplified example)
+            const fileInput = document.getElementById('documentUpload');
+            const uploadedFile = fileInput.files[0];
+
+            // Conditionally enable file upload for orphans or single parents
+            if ((familyStatus === 'partialOrTotalOrphan' || familyStatus === 'singleParent') && uploadedFile) {
+                // Process the form data (you would send this to the server in a real scenario)
+                const formData = new FormData();
+                formData.append('1st',firstName);
+                formData.append('2nd', middleName);
+                formData.append('3rd', lastName);
+                formData.append('familyStatus', familyStatus);
+                formData.append('documentUpload', uploadedFile);
+                formData.append('contactNumber', contactNumber);
+                formData.append('applicantId', applicantId);
+                formData.append('registrationNumber', registrationNumber);
+                formData.append('yearOfStudy', yearOfStudy);
+                formData.append('learningInstitution', learningInstitution);
+                formData.append('dateOfBirth', dateOfBirth);
+                formData.append('amountAppliedFor', amountAppliedFor);
+                formData.append('ward', ward);
+                formData.append('location', location);
+                formData.append('subLocation', subLocation);
+                formData.append('village', village);
+
+
+                // Simulate sending data to the server (replace this with actual AJAX request)
+                console.log('Form Data:', formData);
+
+                // Show a Bootstrap modal as a confirmation
+                $('#confirmationModal').modal('show');
+            } else if (familyStatus !== 'partialOrTotalOrphan' && familyStatus !== 'singleParent') {
+                // Process the form data without file upload
+                const formData = new FormData();
+                formData.append('1st',firstName);
+                formData.append('2nd', middleName);
+                formData.append('3rd', lastName);
+                formData.append('familyStatus', familyStatus);
+                formData.append('contactNumber', contactNumber);
+                formData.append('applicantId', applicantId);
+                formData.append('registrationNumber', registrationNumber);
+                formData.append('yearOfStudy', yearOfStudy);
+                formData.append('learningInstitution', learningInstitution);
+                formData.append('dateOfBirth', dateOfBirth);
+                formData.append('amountAppliedFor', amountAppliedFor);
+                formData.append('ward', ward);
+                formData.append('location', location);
+                formData.append('subLocation', subLocation);
+                formData.append('village', village);
+
+                // Simulate sending data to the server (replace this with actual AJAX request)
+                console.log('Form Data:', formData);
+
+                // Show a Bootstrap modal as a confirmation
+                $('#confirmationModal').modal('show');
+            } else {
+                alert('Please upload the required document for orphans or single parents.');
+            }
+
+            // Hide processing message
+            document.getElementById('processingMessage').style.display = 'none';
+        }
+    </script>
+    
+
+</body>
+</html>
