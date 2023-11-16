@@ -25,7 +25,7 @@
             position: relative;
         }
         footer{
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             background-color: #3498db;
             color: white;
@@ -51,11 +51,11 @@
                 color: #27ae60;
             }
             max-width: 900 px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color:  #2c3e50;
