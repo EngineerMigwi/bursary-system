@@ -240,6 +240,15 @@ button:hover {
             <label for="explain">Explain more about your self :</label>
             <input type="text" id="explain" required>
             </div>
+            
+    <h2>Upload Transcript/Reportform</h2>
+
+    <form id="transcriptForm">
+        <label for="transcriptFile">Select Transcript File:</label>
+        <input type="file" id="transcriptFile" name="transcriptFile" accept=".pdf, .doc, .docx">
+
+        <button type="button" onclick="uploadTranscript()">Upload</button>
+    </form>
 
             
 
@@ -394,6 +403,19 @@ button:hover {
 
             // Hide processing message
             document.getElementById('processingMessage').style.display = 'none';
+        }
+        function uploadTranscript() {
+            // Get the selected file
+            const fileInput = document.getElementById('transcriptFile');
+            const selectedFile = fileInput.files[0];
+
+            if (selectedFile) {
+                // You can handle the file here, for example, send it to the server using AJAX
+                console.log('File selected:', selectedFile);
+                alert('Transcript uploaded successfully!');
+            } else {
+                alert('Please select a transcript file.');
+            }
         }
     </script>
     
